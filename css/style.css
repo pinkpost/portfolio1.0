@@ -47,30 +47,38 @@ p{
 	position: absolute;
 	right: 8%;
 	top: 60%;
-	margin: auto;
+	margin: 0 auto;
+
+
 }
 .title{
 	font-size: 40px;
 	text-align: center;
-	margin-top: 45px;
 	margin-bottom: 45px;
+
+}
+section{
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
-#container{
+.container{
 	width:85%;
 	margin: 0 auto;
 }
 .service{
-
 }
-.service-content{
+.item{
 	display: flex;
 	justify-content: center;
 }
 .service-items{
+	width: 30%;
 	text-align: center;
 	margin: 10px;
 	padding: 10px;
+	border: solid ;
+	border-radius: 5px;
 }
 .service-items:hover{
 	background-color: #f7f7f7;
@@ -82,13 +90,66 @@ p{
 }
 .service-items i{
 	font-size: 60px;
+	padding: 20px;
 
 }
+
+.price-content table{
+	margin: 0 auto;
+	width: 80%;
+	font-size: 25px;
+}
+table{
+	width: 100%;
+	margin: 0 auto;
+}
+th, td {
+    border: 1px solid #363636;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.price{
+	background-color:#eaedf2;
+}
+.contact{
+	background-color:#eaedf2;
+}
+
+.contact-items{
+	width: 30%;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+
+}
+.contact-items:hover{
+	background-color: #f7f7f7;
+}
+.contact-items h3{
+	font-size: 25px;
+	padding: 20px;
+	text-align: center;
+}
+.contact-items i{
+	font-size: 60px;
+	padding: 20px;
+}
+.contact-items p{
+
+}
+.contact-items a{
+	color: #000;
+}
+
+
+
 /* ---- particles.js container ---- */
 
 #particles-js{
   width: 100%;
-  height: 100%;
+  height:800px;
   background-color: #000;
   background-image: url('');
   background-size: cover;
