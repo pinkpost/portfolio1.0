@@ -27,6 +27,9 @@ h1 h2{
 p{
 	line-height: 32px;
 }
+body{
+	background-color:#f7f7f7;
+}
 .clearfix::after {
  	content: "";
 	display: block;
@@ -65,6 +68,7 @@ section{
 .container{
 	width:85%;
 	margin: 0 auto;
+
 }
 .service{
 }
@@ -77,11 +81,14 @@ section{
 	text-align: center;
 	margin: 10px;
 	padding: 10px;
-	border: solid ;
+  background-color: #fff;
 	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
 }
 .service-items:hover{
-	background-color: #f7f7f7;
+	-webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 .service-items h3{
 	font-size: 25px;
@@ -96,25 +103,49 @@ section{
 
 .price-content table{
 	margin: 0 auto;
-	width: 80%;
+	width: 90%;
 	font-size: 25px;
 }
 table{
-	width: 100%;
+
 	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
 }
 th, td {
-    border: 1px solid #363636;
+
     padding: 15px 50px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
 .price{
-	background-color:#eaedf2;
+
 }
-.contact{
-	background-color:#eaedf2;
+.about-content{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	padding: 50px;
+}
+img{
+	height: 1000px;
+	padding-right: 300px;
+
+}
+img:hover{
+	-webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+
+
+
+
+.contact-items:hover{
+	background-color:#607D8B;
 }
 
 .contact-items{
@@ -122,11 +153,13 @@ th, td {
 	text-align: center;
 	margin: 10px;
 	padding: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
 
 }
-.contact-items:hover{
-	background-color: #f7f7f7;
-}
+
 .contact-items h3{
 	font-size: 25px;
 	padding: 20px;
@@ -142,15 +175,52 @@ th, td {
 .contact-items a{
 	color: #000;
 }
+footer{
+	background-color: #37474F;
+	padding-top: 150px;
+	color: #fff;
+}
 
+@media screen and (max-width:600px){
+	.top-content h1{
+	 	font-size: 75px;
+		text-align: center;
+		margin: auto;
+	}
+	.top-content p{
+		font-size: 25px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.item{
+		display: block;
 
+	}
 
+	.service-items{
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+	th, td {
+	    padding: 15px 15px;
+	    font-size: 15px;
+}
+
+.contact-items{
+	width: 80%;
+	text-align: center;
+	margin: 15px;
+	padding: 10px;
+}
+}
 /* ---- particles.js container ---- */
 
 #particles-js{
   width: 100%;
   height:800px;
-  background-color: #000;
+  background-color: #37474F;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
